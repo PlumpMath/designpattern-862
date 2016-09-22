@@ -58,5 +58,18 @@
 2. 数据库访问；    
 3. 设计一个连接服务器的框架；            
 ##实现
-创建一个Shape接口和实现Shape接口的实体类，下一步是定义工厂类ShapeFactory。ShapeFactoryDemo演示类使用ShapeFactory来获取Shape对象；     
+创建一个Shape接口和实现Shape接口的实体类，下一**步是定义工厂类ShapeFactory。ShapeFactoryDemo演示类使用ShapeFactory来获取Shape对象；     
 ![](http://i.imgur.com/VSERqcH.jpg)
+#抽象工厂模式(Abstract Factory Pattern)
+抽象工厂模式是围绕一个超级工厂创建其他工厂，该工厂又称为其他工厂的工厂。这种类型的设计模式属于创建模式。
+##介绍
+****意图：****提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类；      
+**主要解决：**主要解决接口选择问题     
+**何时使用：**系统的产品有多于一个的产品族，而系统只消费其中某一族的产品；      
+**关键代码：**在一个工厂中聚合了多个同类产品；      
+**优点：**   
+1. 当一个产品族中的多个对象被设计成一起工作时，它能保证客户端始终只使用一个产品族中的对象；   
+**缺点：**   
+1. 产品族的扩展非常困难，要增加一个系列的某一产品，既要在抽象的Creator里加代码，又要在具体的里面加代码；          
+**实现：**   
+创建Shape和Color接口和实现这些接口的实体类。创建抽象工厂AbatractFactory,定义工厂类ShapeFactory和ColorFactory,然后创建一个工厂创建器FactoryProducer.
