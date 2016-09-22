@@ -39,6 +39,8 @@
 6. 合成复用原则(Composite Reuse Principle)
 
 	尽量使用合成/聚合的方式，而不是使用继承。
+
+------------------------------------------------------------------------------
 #工厂模式(Facctory Pattern)
 工厂模式是java中最常用的设计模式之一，这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。
 ##介绍
@@ -72,4 +74,5 @@
 **缺点：**   
 1. 产品族的扩展非常困难，要增加一个系列的某一产品，既要在抽象的Creator里加代码，又要在具体的里面加代码；          
 **实现：**   
-创建Shape和Color接口和实现这些接口的实体类。创建抽象工厂AbatractFactory,定义工厂类ShapeFactory和ColorFactory,然后创建一个工厂创建器FactoryProducer.
+创建Shape和Color接口和实现这些接口的实体类。创建抽象工厂AbatractFactory,定义工厂类ShapeFactory和ColorFactory,然后创建一个工厂创建器FactoryProducer.      
+![](http://i.imgur.com/a29L67a.jpg)
